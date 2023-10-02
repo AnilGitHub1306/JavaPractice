@@ -1,6 +1,6 @@
 package interfaceConcept;
 
-public class Impli implements interfaceA
+public class Impli implements interfaceA,interfaceB
 {
 	public void method2() 
 	{System.out.println("dghsfds");}

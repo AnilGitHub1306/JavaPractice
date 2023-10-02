@@ -3,10 +3,11 @@ package Inheritance;
 public class ParentClass1 
 {
 	static int a=555;
-	int b= 666;
-	   static int  a1=200;
-	   		  int a2=343;
-	   		String act1 ="hdsgsdf,";
+	       int b= 666;
+   static int a1=200;
+	      int a2=343;
+	
+	String act1 ="hdsgsdf,";
 //	public ParentClass1(int u)
 	//{System.out.println("parent class constructor");}
 	

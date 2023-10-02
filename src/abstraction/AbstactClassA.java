@@ -2,8 +2,18 @@ package abstraction;
 
 public abstract class AbstactClassA 
 {
+
+	public final void test1()
+	{System.out.println("final method in abstract class");}
+	
+	public  final abstract void test2();
+	
+	
 	static int a=100;
 	int b=200;
+	
+	public void test3() {}
+	
 	
 	public AbstactClassA() 
 	{}

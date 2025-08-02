@@ -4,16 +4,16 @@ public class C_byte_To_Other_Datatype
 {
 	public static void main(String[] args) 
 	{
-	byte by=100;
+	byte x=100;
 		
-		boolean b= by!=0;				//byte to boolean
-		byte b1 = (byte)by;				//byte to byte
-		short s = (short) by; 			//byte to short
-		int i = (int) by;				// byte to int
-		long l = (long) by;				// byte to long
-		float f = (float) by;			//byte to float
-		double d = (double) by;			//byte to double
-		String str = Byte.toString(by);	//byte to String
+		boolean b= x != 0;				//byte to boolean
+		byte b1 = (byte)x;				//byte to byte
+		short s = (short) x; 			//byte to short
+		int i = (int) x;				// byte to int
+		long l = (long) x;				// byte to long
+		float f = (float) x;			//byte to float
+		double d = (double) x;			//byte to double
+		String str = Byte.toString(x);	//byte to String
 		
 		System.out.println("byte to boolean	- "+b);
 		System.out.println("byte to byte	- "+b1);

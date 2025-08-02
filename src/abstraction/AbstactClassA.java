@@ -6,7 +6,7 @@ public abstract class AbstactClassA
 	public final void test1()
 	{System.out.println("final method in abstract class");}
 	
-	public  final abstract void test2();
+//	public  final abstract void test2();                         // abstract method can not be a final 
 	
 	
 	static int a=100;

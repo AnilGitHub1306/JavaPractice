@@ -1,5 +1,7 @@
 package constructor;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 public class Constructer1 {
 
 	static int a;
@@ -12,6 +14,10 @@ public class Constructer1 {
 		a=56;
 		System.out.println(a);
 	}
+	
+	public void m1()
+	{System.out.println("m1 mrthod");}
+	
 	public static void main(String[] args) 
 	{
 		b=12;

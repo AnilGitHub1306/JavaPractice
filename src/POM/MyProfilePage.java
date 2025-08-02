@@ -1,0 +1,45 @@
+package POM;
+
+import java.util.ArrayList;
+import java.util.Set;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class MyProfilePage 
+{
+	@FindBy(xpath = "//input[@name='personName']")  private WebElement fullName;
+	WebDriver driver;
+
+	public MyProfilePage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+		this.driver=driver;
+	}
+	
+	
+	public void switchToChildWindow() 
+	{
+		Set<String> allIds = driver.getWindowHandles();
+		ArrayList<String> al=new ArrayList(allIds);
+		driver.switchTo().window(al.get(1));		
+	}
+	
+	public void verifyMyProfilePageFullName()
+	{
+		String actFullName = fullName.getAttribute("value");
+		String expFullName="Jan batch";
+		if (actFullName.equals(expFullName)) 
+		{
+			System.out.println("Pass");
+		} 
+		else
+		{
+			System.out.println("Fail");
+		}
+	}
+	
+	
+}
